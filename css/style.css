@@ -5,13 +5,11 @@
 
 body {
     font-family: Arial, sans-serif;
-}
-
-/*Nav block*/
-.step-1 {
-    height: 721px;
     background-color: black;
 }
+
+/*Step-1-Nav block*/
+.step-1 {height: 721px;}
 
 .topnav {
     display: flex;
@@ -125,5 +123,252 @@ body {
     color: white;
     font-weight: 200;
 }
+/*Step-1-Nav endblock*/
 
-/*Nav endblock*/
+/*Step-2 block*/
+.step-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+
+.step-2 h1 {
+    font-size: 96px;
+    font-weight: 200;
+    color: white;
+}
+
+.step-2 img {
+    position: relative;
+    top: -105px;
+    left: 83px;
+}
+
+.step-2 p {
+    position: relative;
+    left: -125px;
+    width: 445px;
+    line-height: 25px;
+    color: white;
+}
+/*Step-2 endblock*/
+/*Step-3 block*/
+.step-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.step-3 h3 {
+    color: white;
+    margin-top: 32px;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.step-3-box-1 {
+    text-align: center;
+    position: relative;
+    left: 210px;
+}
+
+.step-3-box-2 {
+    text-align: center;
+    position: relative;
+    left: -290px;
+}
+
+.step-3-box-3 {
+    text-align: center;
+    position: relative;
+    left: 290px;
+}
+
+#canvas1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 360px;
+    border: 1px solid greenyellow;
+    border-radius: 50%;
+}
+
+#canvas2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 360px;
+    border: 1px solid greenyellow;
+    border-radius: 50%;
+}
+
+
+.ball {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.stick1 {
+    position: relative;
+    left: 25px;
+    transform: rotate(45deg);
+    width: 3px;
+    height: 130px;
+    background-color: white;
+}
+
+.stick2 {
+    position: relative;
+    top: -15px;
+    left: -24px;
+    width: 2px;
+    height: 125px;
+    background-color: white;
+}
+/*Step-3 endblock*/
+/*Step-4 block*/
+.step-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.step-4-header h1 {
+    padding-top: 180px;
+    font-size: 96px;
+    font-weight: 200;
+    color: white;
+}
+
+.step-4-header img {
+    position: relative;
+    top: -110px;
+    left: 35px;
+}
+
+.step-4-nav {
+    padding: 0 0 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.test1 {
+    border-bottom: 1px solid gainsboro;
+    padding: 0 40px 18px;
+    transition: 0.2s;
+}
+
+.step-4-nav div {
+    border-bottom: 1px solid gainsboro;
+    padding: 0 40px 18px;
+    transition: 0.2s;
+}
+.step-4-nav div.activ {border-color: greenyellow; color: greenyellow;}
+.step-4-nav a.activ {color: greenyellow;}
+
+.step-4-nav a {
+    text-decoration: none;
+    font-size: 24px;
+    color: gainsboro;
+    text-align: center;
+    transition: 0.2s;
+}
+.step-4-nav div:hover {border-color: greenyellow; color: greenyellow;}
+.step-4-nav a:hover {color: greenyellow;}
+
+
+.step-4-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 997px;
+    background-image: url(https://static.tildacdn.com/tild6262-6433-4166-b939-316433366261/pic.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.step-4-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1160px;
+    height: 124px;
+    margin-top: 45px;
+    border-bottom: 1px solid white;
+}
+
+.step-4-box:hover img {transform: rotate(0);}
+
+.step-4-box:hover #step-4-box-left {
+    font-style: italic;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
+}
+
+#step-4-box-left {
+    font-size: 96px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.step-4-box p {
+    color: white;
+    font-size: 35px;
+}
+
+.step-4-box-center-left em {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.step-4-box-center-left p {
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+
+.step-4-box img {
+    transform: rotate(-45deg);
+    transition: 0.2s cubic-bezier(.47,-.44,.49,1.46);
+}
+
+.marquee-infinite {
+    margin: 30px auto;
+    max-width: 100%;
+    text-align: center;
+    height: 100px;
+    overflow: hidden;
+}
+.marquee-infinite p {
+    font-size: 96px;
+    color: white;
+    white-space: nowrap;
+}
+
+.marquee-infinite em {
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    color: black;
+}
+
+.marquee-infinite span {color: greenyellow;}
+
+/*Step-4s endblock*/ 
