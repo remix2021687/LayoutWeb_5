@@ -5,11 +5,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
+    /* background-color: black; */
 }
 
 /*Step-1-Nav block*/
-.step-1 {height: 721px;}
+.step-1 {
+    height: 721px;
+    background-color: black;
+}
 
 .topnav {
     display: flex;
@@ -130,16 +133,20 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: black;
+}
+
+.step-2-header {
     margin-top: 90px;
 }
 
-.step-2 h1 {
+.step-2-header h1 {
     font-size: 96px;
     font-weight: 200;
     color: white;
 }
 
-.step-2 img {
+.step-2-header img {
     position: relative;
     top: -105px;
     left: 83px;
@@ -151,14 +158,16 @@ body {
     width: 445px;
     line-height: 25px;
     color: white;
+    margin-top: 90px;
 }
+
 /*Step-2 endblock*/
 /*Step-3 block*/
 .step-3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
+    background-color: black;
 }
 
 .step-3 h3 {
@@ -195,6 +204,7 @@ body {
     height: 360px;
     border: 1px solid greenyellow;
     border-radius: 50%;
+    margin-top: 120px;
 }
 
 #canvas2 {
@@ -240,9 +250,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: black;
 }
-
-
 
 .step-4-header h1 {
     padding-top: 180px;
@@ -386,6 +395,7 @@ body {
 .step-5 {
     display: flex;
     flex-direction: column;
+    background-color: black;
     /* align-items: center; */
 }
 
