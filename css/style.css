@@ -53,6 +53,17 @@ body {
 
 .topnav-right a:hover {color: greenyellow;}
 
+
+#nav3 {
+    opacity: 0;
+    transform: translateY(35px);
+}
+
+#nav3.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 #nav4 {
     opacity: 0;
     transform: translateY(35px);

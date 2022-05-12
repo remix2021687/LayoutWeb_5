@@ -20,6 +20,10 @@ $(document).ready(function() {
     let container = new ScrollMagic.Controller();
 
     new ScrollMagic.Scene({triggerElement: ".topnav"})
+    .setClassToggle("#nav3", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".topnav"})
     .setClassToggle("#nav4", "show")
     .addTo(container);
 
