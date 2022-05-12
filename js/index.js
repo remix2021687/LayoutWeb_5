@@ -16,4 +16,14 @@ $(document).ready(function() {
         direction: 'left',
         duplicated: true
     });
+
+    let container = new ScrollMagic.Controller();
+
+    new ScrollMagic.Scene({triggerElement: ".topnav"})
+    .setClassToggle("#nav4", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".topnav"})
+    .setClassToggle("#nav5", "show")
+    .addTo(container);
 });

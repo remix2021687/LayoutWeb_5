@@ -48,10 +48,30 @@ body {
 .topnav-right a {
     color: white;
     text-decoration: none;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .topnav-right a:hover {color: greenyellow;}
+
+#nav4 {
+    opacity: 0;
+    transform: translateY(35px);
+}
+
+#nav4.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#nav5 {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+#nav5.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .step-1-up {
     display: flex;
