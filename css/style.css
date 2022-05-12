@@ -48,10 +48,60 @@ body {
 .topnav-right a {
     color: white;
     text-decoration: none;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .topnav-right a:hover {color: greenyellow;}
+
+#nav1 {
+    opacity: 0;
+    transform: translateY(35px);
+}
+
+#nav1.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#nav2 {
+    opacity: 0;
+    transform: translateY(35px);
+}
+
+#nav2.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#nav3 {
+    opacity: 0;
+    transform: translateY(35px);
+}
+
+#nav3.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#nav4 {
+    opacity: 0;
+    transform: translateY(35px);
+}
+
+#nav4.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#nav5 {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+#nav5.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .step-1-up {
     display: flex;
@@ -68,11 +118,30 @@ body {
     font-size: 135px;
 }
 
+.step-1-anim1 {
+    opacity: 0;
+    transform: translateX(160px);
+    transition: 1s;
+}
+
+.step-1-anim1.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
 .step-1-up img {
     position: relative;
     left: -5px;
     transform: rotate(-45deg);
 }
+
+.step-1-img1 {
+    opacity: 0;
+    transition: 1s;
+}
+
+.step-1-img1.show {opacity: 1;}
 
 .step-1-down {
     display: flex;
@@ -89,6 +158,24 @@ body {
     line-height: 25px;
     width: 224px;
 }
+
+.step-1-anim2 {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: 1s;
+}
+
+.step-1-anim2.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.step-1-text-1 {
+    opacity: 0;
+    transition: 1s;
+}
+
+.step-1-text-1.show {opacity: 1;}
 
 @keyframes anime1 {
     0% {
@@ -138,8 +225,15 @@ body {
 
 .step-2-header {
     margin-top: 90px;
+    opacity: 0;
+    transform: translateX(120px);
+    transition: 1s;
 }
 
+.step-2-header.show {
+    opacity: 1;
+    transform: translateX(0);
+}
 .step-2-header h1 {
     font-size: 96px;
     font-weight: 200;
@@ -161,6 +255,13 @@ body {
     margin-top: 90px;
 }
 
+.step-2-header-text {
+    opacity: 0;
+    transition: 1s;
+}
+
+.step-2-header-text.show {opacity: 1;}
+
 /*Step-2 endblock*/
 /*Step-3 block*/
 .step-3 {
@@ -175,6 +276,7 @@ body {
     margin-top: 32px;
     font-size: 24px;
     font-weight: 100;
+    transition: 1s;
 }
 
 .step-3-box-1 {
@@ -183,16 +285,47 @@ body {
     left: 210px;
 }
 
+.step-3-text-1 {
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+.step-3-text-1.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .step-3-box-2 {
     text-align: center;
     position: relative;
     left: -290px;
 }
 
+.step-3-text-2 {
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+.step-3-text-2.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .step-3-box-3 {
     text-align: center;
     position: relative;
-    left: 290px;
+    left: 240px;
+    transition: 1s;
+}
+
+.step-3-text-3 {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.step-3-text-3.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #canvas1 {
@@ -218,6 +351,16 @@ body {
     border-radius: 50%;
 }
 
+#canvas3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 560px;
+    height: 560px;
+    border: 1px solid greenyellow;
+    border-radius: 50%;
+}
 
 .ball {
     width: 40px;
@@ -251,6 +394,17 @@ body {
     align-items: center;
     justify-content: center;
     background-color: black;
+}
+
+.step-4-header {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 1s;
+}
+
+.step-4-header.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .step-4-header h1 {
@@ -331,12 +485,33 @@ body {
 
 .step-4-box:hover img {transform: rotate(0);}
 
-.step-4-box:hover #step-4-box-left {
-    font-style: italic;
-    -webkit-text-fill-color: rgba(0, 0, 0, 0.0);
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
+.box-1 {
+    opacity: 0;
+    transition: 1s;
 }
+
+.box-1.show {opacity: 1;}
+
+.box-2 {
+    opacity: 0;
+    transition: 1s;
+}
+
+.box-2.show {opacity: 1;}
+
+.box-3 {
+    opacity: 0;
+    transition: 1s;
+}
+
+.box-3.show {opacity: 1;}
+
+.box-4 {
+    opacity: 0;
+    transition: 1s;
+}
+
+.box-4.show {opacity: 1;}
 
 #step-4-box-left {
     font-size: 96px;
@@ -399,7 +574,17 @@ body {
     /* align-items: center; */
 }
 
-.step-5-header {margin: 0 159px;}
+.step-5-header {
+    margin: 0 159px;
+    opacity: 0;
+    transform: translateX(80px);
+    transition: 1s;
+}
+
+.step-5-header.show {
+    opacity: 1;
+    transform: translateX(0);
+}
 
 .step-5-header h2 {
    font-size: 96px;
@@ -456,6 +641,13 @@ body {
     font-size: 30px;
 }
 
+/* .step-text-h4-1 {
+    opacity: 0;
+    transition: 1s;
+}
+
+.step-text-h4-1.show {opacity: 1;} */
+
 .step-5-content-rights {
     margin-top: 151px;
     margin-left: 303px;
@@ -505,6 +697,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: white;
+    overflow: hidden;
 }
 
 .step-6-up {
@@ -527,6 +720,17 @@ body {
     font-weight: 100;
 }
 
+.step-6-text {
+    opacity: 0;
+    transform: translateX(70px);
+    transition: 1s;
+}
+
+.step-6-text.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .step-6-up img {
     position: relative;
     top: -123px;
@@ -545,6 +749,17 @@ body {
 .step-6-down {
     padding-top: 180px;
     padding-left: 160px;
+}
+
+.step-6-header {
+    opacity: 0;
+    transform: translateX(70px);
+    transition: 1s;
+}
+
+.step-6-header.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .step-6-header h2 {
@@ -587,6 +802,17 @@ body {
     font-weight: 200;
 }
 
+.step-7-header-up {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 1s;
+}
+
+.step-7-header-up.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .step-7-header img {
     width: 1120px;
     height: 149px;
@@ -608,6 +834,13 @@ body {
     border-top: 1px solid black;
     border-bottom: 3px solid black;
 }
+
+.step-7-header-show {
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.step-7-header-show.show {opacity: 1;}
 
 .step-7-header-box em {
     font-size: 16px;
@@ -638,6 +871,17 @@ body {
     margin-bottom: 120px;
 }
 
+.step-7-content-header {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: 1s;
+}
+
+.step-7-content-header.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .step-7-content-header h2 {
     font-size: 96px;
     font-weight: 200;
@@ -655,6 +899,28 @@ body {
     grid-template-rows: repeat(2, 150px);
     grid-column-gap: 0;
     grid-row-gap: 50px;
+}
+
+.step-7-box-1 {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 1s;
+}
+
+.step-7-box-1.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.step-7-box-2 {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 1s;
+}
+
+.step-7-box-2.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .step-7-content-left h2 {
@@ -679,6 +945,16 @@ body {
     height: 1378px;
 }
 
+.step-7-jobs-header {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 1s;
+}
+
+.step-7-jobs-header.show{
+    opacity: 1;
+    transform: translateX(0);
+}
 
 .step-7-jobs-header img {
     position: relative;
@@ -706,6 +982,60 @@ body {
 
 .step-7-jobs-box:hover h2 {font-style: italic;}
 
+.step7-text-1 {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 1s;
+}
+
+.step7-text-1.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.step7-text-2 {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 1s;
+}
+
+.step7-text-2.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.step7-text-3 {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 1s;
+}
+
+.step7-text-3.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.step7-text-4 {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 1s;
+}
+
+.step7-text-4.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.step7-text-5 {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 1s;
+}
+
+.step7-text-5.show {
+    opacity: 1;
+    transform: translateX(0);
+}
 
 .step-7-photo-1 {
     width: 360px;
@@ -776,6 +1106,17 @@ body {
 .footer-up img {
     position: relative;
     left: -100px;
+}
+
+.footer-up-text {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 1s;
+}
+
+.footer-up-text.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .footer-down {
