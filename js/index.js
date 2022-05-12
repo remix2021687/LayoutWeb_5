@@ -95,4 +95,60 @@ $(document).ready(function() {
     new ScrollMagic.Scene({triggerElement: ".box-4"})
     .setClassToggle(".box-4", "show")
     .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step-5-header"})
+    .setClassToggle(".step-5-header", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step-6"})
+    .setClassToggle(".step-6-text", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step-6-down"})
+    .setClassToggle(".step-6-header", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step-7-header"})
+    .setClassToggle(".step-7-header-up", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step-7-header"})
+    .setClassToggle(".step-7-header-show", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step-7-content-header"})
+    .setClassToggle(".step-7-content-header", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step-7-jobs-header"})
+    .setClassToggle(".step-7-jobs-header", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step-7-content-header"})
+    .setClassToggle(".step-7-box-1", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step7-text-1"})
+    .setClassToggle(".step7-text-1", "show")
+    .addTo(container);
+    
+    new ScrollMagic.Scene({triggerElement: ".step7-text-2"})
+    .setClassToggle(".step7-text-2", "show")
+    .addTo(container);
+    
+    new ScrollMagic.Scene({triggerElement: ".step7-text-3"})
+    .setClassToggle(".step7-text-3", "show")
+    .addTo(container);
+    
+    new ScrollMagic.Scene({triggerElement: ".step7-text-4"})
+    .setClassToggle(".step7-text-4", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step7-text-5"})
+    .setClassToggle(".step7-text-5", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".footer-up-text"})
+    .setClassToggle(".footer-up-text", "show")
+    .addTo(container);
 });
