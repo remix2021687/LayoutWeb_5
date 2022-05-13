@@ -104,6 +104,38 @@ $(document).ready(function() {
     .setClassToggle(".step-5-header", "show")
     .addTo(container);
 
+    new ScrollMagic.Scene({triggerElement: ".step-5-img-1"})
+    .setClassToggle(".step-5-text-h4-1", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step-5-img-1"})
+    .setClassToggle(".step-5-text-em-1", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step-5-img-2"})
+    .setClassToggle(".step-5-text-h4-2", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step-5-img-2"})
+    .setClassToggle(".step-5-text-em-2", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step-5-img-3"})
+    .setClassToggle(".step-5-text-h4-3", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step-5-img-3"})
+    .setClassToggle(".step-5-text-em-3", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step-5-img-4"})
+    .setClassToggle(".step-5-text-h4-4", "show")
+    .addTo(container);
+
+    new ScrollMagic.Scene({triggerElement: ".step-5-img-4"})
+    .setClassToggle(".step-5-text-em-4", "show")
+    .addTo(container);
+
     //Step-6
     new ScrollMagic.Scene({triggerElement: ".step-6"})
     .setClassToggle(".step-6-text", "show")
@@ -118,7 +150,7 @@ $(document).ready(function() {
     .setClassToggle(".step-7-header-up", "show")
     .addTo(container);
 
-    new ScrollMagic.Scene({triggerElement: ".step-7-header"})
+    new ScrollMagic.Scene({triggerElement: ".step-7-header-show"})
     .setClassToggle(".step-7-header-show", "show")
     .addTo(container);
 
